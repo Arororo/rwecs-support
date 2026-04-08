@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RWECS Premium for Garmin</title>
+  <meta name="description" content="Learn how RWECS Premium works with Garmin watches, how to set it up, and where to get the companion app.">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #111827;
+      --card-2: #0f172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22c55e;
+      --accent-2: #3b82f6;
+      --border: #1f2937;
+      --warn: #f59e0b;
+      --radius: 14px;
+      --space: 16px;
+      --max: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.45;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: calc(env(safe-area-inset-top) + 18px) 14px calc(env(safe-area-inset-bottom) + 20px);
+    }
+
+    .hero {
+      background: linear-gradient(160deg, #121a25 0%, #0d1118 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 16px;
+      margin-bottom: var(--space);
+    }
+
+    h1, h2 {
+      margin: 0 0 10px;
+      line-height: 1.2;
+    }
+
+    h1 { font-size: 1.45rem; }
+    h2 { font-size: 1.1rem; }
+
+    p {
+      margin: 0 0 10px;
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+
+    ul, ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li { margin: 6px 0; }
+
+    .cta {
+      display: inline-flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      min-height: 48px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .cta-ios {
+      background: var(--accent-2);
+      color: #fff;
+    }
+
+    .cta-android {
+      background: transparent;
+      border-color: #334155;
+      color: var(--muted);
+      cursor: not-allowed;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    .badge-ok {
+      background: rgba(34, 197, 94, 0.15);
+      color: #86efac;
+      border: 1px solid rgba(34, 197, 94, 0.35);
+    }
+
+    .badge-warn {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fcd34d;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+
+    .small {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 720px) {
+      .wrap { padding-left: 20px; padding-right: 20px; }
+      .row.two { grid-template-columns: 1fr 1fr; }
+      h1 { font-size: 1.65rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge badge-ok">RWECS Premium for Garmin</span>
+      <h1>Set up Premium on your Garmin watch</h1>
+      <p>Use this page to understand what Premium unlocks and how to activate sync between your watch and phone.</p>
+      <p class="small">If you opened this from the watch, return to <strong>Premium → Sync with phone</strong> after setup.</p>
+    </section>
+
+    <section class="row two">
+      <article class="card">
+        <h2>Premium benefits</h2>
+        <ul>
+          <li>Access to full session history (not only recent workouts).</li>
+          <li>Detailed charts for recorded session data.</li>
+          <li>Advanced dual-sensor workflow as features roll out.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="badge badge-warn">Required</span>
+        <h2>What must be ready</h2>
+        <ul>
+          <li>Garmin watch paired with your phone in Garmin Connect.</li>
+          <li>Bluetooth enabled and phone near your watch.</li>
+          <li>RWECS companion app installed on your phone.</li>
+          <li>Active Premium subscription in the companion app.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card" aria-labelledby="setup-steps">
+      <h2 id="setup-steps">Setup steps</h2>
+      <ol>
+        <li>Install and open the RWECS companion app on your phone.</li>
+        <li>Sign in and purchase/restore Premium in the app.</li>
+        <li>Keep Garmin Connect and RWECS app active in background.</li>
+        <li>On your watch: <strong>RWECS → Premium → Sync with phone</strong>.</li>
+        <li>Wait for sync to complete; status should update in pre-session screen.</li>
+      </ol>
+    </section>
+
+    <section class="row two" aria-labelledby="download">
+      <article class="card">
+        <h2 id="download">Companion app</h2>
+        <p class="muted">Install the mobile app first. Premium is managed there.</p>
+        <a class="cta cta-ios" href="https://apps.apple.com/us/app/rwecs/id6747927317" target="_blank" rel="noopener">
+          Download on the App Store
+        </a>
+        <button class="cta cta-android" type="button" aria-disabled="true">
+          Google Play — Coming soon
+        </button>
+      </article>
+
+      <article class="card">
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li>If watch says <strong>Sync failed</strong>, open Garmin Connect + RWECS app on phone and retry.</li>
+          <li>If no phone is connected, connect/pair first, then run sync again.</li>
+          <li>If Premium still shows <strong>Free</strong>, verify subscription status in the RWECS app.</li>
+        </ul>
+      </article>
+    </section>
+
+    <p class="footer">RWECS • Garmin Premium setup guide</p>
+  </main>
+</body>
+</html>
